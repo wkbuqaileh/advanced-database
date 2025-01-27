@@ -1,1 +1,19 @@
-
+<html>
+    <h3>List:</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Kind</th>
+            <th>Age</th>
+            <th>Owner</th>
+        </tr>
+        {% for item in rows %}
+        <tr>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</html>
